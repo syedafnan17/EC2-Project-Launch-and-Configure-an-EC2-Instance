@@ -4,7 +4,7 @@
 
 This project demonstrates how I launched and configured an Amazon EC2 instance to host a simple web application.
 
-## 🛠️ AWS Services Used
+🛠️ AWS Services Used
 
 - EC2 – Virtual server instance
 - VPC & Security Groups – Networking and firewall rules
@@ -12,14 +12,14 @@ This project demonstrates how I launched and configured an Amazon EC2 instance t
 
 ---
 
-## ⚡ Prerequisites
+⚡ Prerequisites
 
 - AWS account with permissions to create EC2 instances
 - SSH key pair for connecting to your instance
 - Basic knowledge of AWS Console
 
 
-## 🚀 Getting Started
+🚀 Getting Started
 
 1. Launch EC2 Instance
    - Select Amazon Linux 2 AMI
@@ -51,7 +51,7 @@ This project demonstrates how I launched and configured an Amazon EC2 instance t
 
 ---
 
-## ✅ Output
+✅ Output
 
 After completing the steps, visit `http://<EC2_PUBLIC_IP>` in your browser.  
 You should see:
@@ -61,7 +61,7 @@ Hello from EC2!
 ```
 
 
-## 📚 Key Learnings
+📚 Key Learnings
 
 - How to launch and connect to an EC2 instance
 - Configuring security group rules for SSH and HTTP
