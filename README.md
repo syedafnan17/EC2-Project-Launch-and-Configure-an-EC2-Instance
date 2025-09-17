@@ -39,7 +39,6 @@ This project demonstrates how I launched and configured an Amazon EC2 instance t
   sudo su
   yum install httpd -y
   cd /var/www/html
-  echo"this is $(hostname)"> index.html
   systemctl start httpd
   chkconfig httpd
    ```
