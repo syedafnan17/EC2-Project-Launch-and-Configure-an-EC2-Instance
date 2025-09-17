@@ -4,8 +4,6 @@
 
 This project demonstrates how I launched and configured an Amazon EC2 instance to host a simple web application.
 
----
-
 ## 🛠️ AWS Services Used
 
 - EC2 – Virtual server instance
@@ -20,7 +18,6 @@ This project demonstrates how I launched and configured an Amazon EC2 instance t
 - SSH key pair for connecting to your instance
 - Basic knowledge of AWS Console
 
----
 
 ## 🚀 Getting Started
 
@@ -38,16 +35,19 @@ This project demonstrates how I launched and configured an Amazon EC2 instance t
    ```
 
 4. Install Apache Web Server
-   ```bash
-   sudo yum update -y
-   sudo yum install httpd -y
-   sudo systemctl start httpd
+  #!/bin/bash
+  sudo su
+  yum install httpd -y
+  cd /var/www/html
+  echo"this is $(hostname)"> index.html
+  systemctl start httpd
+  chkconfig httpd
    ```
 
 5. Host Test Webpage
    - Place an `index.html` file in `/var/www/html`:
      ```bash
-     echo "<h1>Hello from EC2!</h1>" | sudo tee /var/www/html/index.html
+     echo"this is $(hostname)"> index.html
      ```
 
 ---
@@ -61,7 +61,6 @@ You should see:
 Hello from EC2!
 ```
 
----
 
 ## 📚 Key Learnings
 
@@ -69,9 +68,4 @@ Hello from EC2!
 - Configuring security group rules for SSH and HTTP
 - Basic web hosting on Amazon Linux EC2
 
----
 
-## 👤 Author & License
-
-**Author:** syedafnan17  
-**License:** MIT
