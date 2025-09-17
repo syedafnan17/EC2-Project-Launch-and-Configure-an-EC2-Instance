@@ -57,7 +57,7 @@ After completing the steps, visit `http://<EC2_PUBLIC_IP>` in your browser.
 You should see:
 
 ```
-Hello from EC2!
+this is ip 172.31-24-227.ec2.internal!
 ```
 
 
